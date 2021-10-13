@@ -1,0 +1,15 @@
+#include <stdio.h> 
+int main()
+{
+	int a,b,c,d,x;
+	
+	a=10;
+	b=2;
+	c=15;
+	d=7;
+	x=(a-b)/(c-d);
+	
+	printf("x=%d",x);
+	
+	return 0;
+}
