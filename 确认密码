@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+	char password[100] = { 0 };
+	printf("please enter your password:\n");
+	scanf("%s", password);
+	printf("please ensure your password(Y/N):\n");
+	
+	int tmp = 0;
+	while ((tmp = getchar()) != '\n')//为了getchar不因为读取空格而导致程序失效
+	{
+		;
+	}
+	int ch = getchar();
+	if (ch == 'Y')
+	{
+		printf("密码正确\n");
+	}
+	else
+	{
+		printf("密码错误\n");
+	}
+
+	return 0;
+}
